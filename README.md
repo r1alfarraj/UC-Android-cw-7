@@ -1,33 +1,60 @@
 <div dir="rtl">
-<p dir="rtl">
-تمرين💪 : </p>
+<p dir="rtl"><b><h2>
+التمرين الاول💪 : </p></b></h2>
 
 
 <p dir="rtl">
-راح تسوي برنامج يعرض بيانات بوكيمون من pokeAPI في listView!</p>
+راح نربط تطبيقنا مع الFirebase </p>
 
 
-<p dir="rtl">
-نزل <a href="https://file.io/e4aPgAhOPpQO">هذا المشروع</a> اللي يحتوي على listView جاهز ، بس تضيف له كود الـ Volley</p>
+<p dir="rtl"><b>
+استخدم مشروعك السابق وعدل عليه</p></b>
+
+١- ننشئ مشروع في firebase 
+
+٢- نروح عند الRealTime DB  و ننشئ وحده و تكون read and write 
+
+٣- ندخل بالاكاونت داخل Android studio 
+
+٤- tools> firebase
+
+٥- Connect to real time>> chose project
+
+٦- نكتب الكود وداخله لينك الداتا بيس
 
 
-<p dir="rtl">
-<strong>بونص! لا تنزل البرنامج وسوه كله بروحك 😄</strong></p>
+٧- ننزل google.json وندخل applicatioID  و نضيف الملف وبس!
+
+##
+
+<b>تعريف الfirebase</b> 
 
 
-<p dir="rtl">
-بحيث يعرض أسماء البوكيمونات</p>
+FirebaseDatabase database = FirebaseDatabase.getInstance("URL");
+
+DatabaseReference dbRef = database.getReference();
 
 
-
-  
-<img src="https://cdn.discordapp.com/attachments/777873731972235295/986319578651054181/unknown.png"/>
-<p dir="rtl">
-راح تستعمل هذا الـ API:  </p>
+<p dir="rtl"><b><h2>
+التمرين الثاني💪 : </p></b></h2>
 
 
-<p dir="rtl">
-<a href="https://pokeapi.co/api/v2/pokemon?offset=0&limit=151">https://pokeapi.co/api/v2/pokemon?offset=0&limit=151</a></p>
+ضيف الصور داخل Storage واستخدم الروابط في realtime database
+
+
+<p dir="rtl"><b><h2>
+التمرين الثالث💪 : </p></b></h2>
+
+
+استخدم مكتبة Picasso لتحميل الصور من الرابط إلى الImageView
+
+إضافة المكتبة في ملف المشروع  build.gradle
+implementation 'com.squareup.picasso:picasso:2.5.2'
+
+إضافة سطر في AndroidManifest.xml
+<uses-permission android:name="android.permission.INTERNET"/> 
+
+Picasso.with(this).load(URL).into(ImageView);
 
 
 <p dir="rtl">
